@@ -1,8 +1,27 @@
+:root {
+  --cor-primaria: #e21;
+  --cor-secundaria: #900;
+  --cor-fundo: #f7f7f7;
+  --cor-fundo2: #fff;
+  --texto: #000;
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+body {
   font-family: Arial, Helvetica, sans-serif;
+  color: var(--texto);
+  background-color: var(--cor-fundo);
+}
+
+:root {
+  --cor-fundo: #111;
+  --cor-fundo2: #000;
+  --texto: #fff;
 }
 
 a {
@@ -29,14 +48,14 @@ nav ul {
 
 nav ul a {
   display: block;
-  color: #000;
+  color: var(--texto);
   border: 2px solid transparent;
   padding: 1rem 1.5rem;
   transition: 0.3s;
 }
 
 nav ul a:hover {
-  border: 2px solid #ee2211;
+  border: 2px solid var(--cor-primaria);
 }
 
 .section-1 {
@@ -49,7 +68,7 @@ nav ul a:hover {
 .section-1 .dec {
   width: 80px;
   height: 4px;
-  background-color: #ee2211;
+  background-color: var(--cor-primaria);
   border-radius: 5px;
   position: absolute;
   left: 50%;
@@ -80,16 +99,16 @@ nav ul a:hover {
 }
 
 .section-1-txt a {
-  color: #fff;
+  color: var(--cor-fundo2);
   font-size: 1.3rem;
-  background-color: #ee2211;
+  background-color: var(--cor-primaria);
   padding: 1rem 1.5rem;
   border-radius: 5px;
   transition: 0.3s;
 }
 
 .section-1-txt a:hover {
-  background-color: #ad1305;
+  background-color: var(--cor-secundaria);
 }
 
 .section-1-img {
@@ -154,11 +173,11 @@ nav ul a:hover {
 }
 
 .section-2-vantagens-single:nth-child(odd) {
-  background-color: #f7f7f7;
+  background-color: var(--cor-fundo);
 }
 
 .section-2-vantagens-single:hover {
-  border-left: 2px solid #ee2211;
+  border-left: 2px solid var(--cor-primaria);
 }
 
 /* .section-2-vantagens-single::before {
@@ -167,7 +186,7 @@ nav ul a:hover {
   position: absolute;
   height: 100%;
   width: 2px;
-  background-color: #ee2211;
+  background-color: var(--cor-primaria);
   margin-left: -40px;
 } */
 
